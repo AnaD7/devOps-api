@@ -4,7 +4,7 @@ pipeline {
    environment {
      // Environment variables which need to be set in Jenkins
      // ORGANIZATION_NAME = "AnaD7"
-     // YOUR_DOCKERHUB_USERNAME = "anadrvoshanova"
+     // YOUR_DOCKERHUB_USERNAME = "anadrvoshanova" 
 
      SERVICE_NAME = "fleetman-api-gateway"
      REPOSITORY_TAG="${YOUR_DOCKERHUB_USERNAME}/${ORGANIZATION_NAME}-${SERVICE_NAME}:${BUILD_ID}"
