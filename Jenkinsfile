@@ -22,6 +22,13 @@ pipeline {
             sh '''mvn clean package'''
          }
       }
+      
+      stage('Publish test results') 
+      steps{
+         junit{
+            '**/test-results/test/*.xml'
+         }
+      }
 
       stage('Build and Push Image') {
          steps {
